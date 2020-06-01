@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="3dp"
+    android:elevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/event_handlers_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alacrity India"
+            android:textSize="@dimen/event_handlers_name"
+            android:textColor="#4D4B4B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="13dp"/>
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Founders Meetup 3.0"
+            android:textSize="@dimen/event_name"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/event_handlers_name"
+            app:layout_constraintStart_toStartOf="@id/event_handlers_name"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/event_date_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/01/2019"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/event_name"
+            app:layout_constraintTop_toBottomOf="@id/event_name"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alacrity India Innovation Centre"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/event_date_c"
+            app:layout_constraintTop_toBottomOf="@id/event_name"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:id="@+id/no_of_mems_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toBottomOf="@id/event_date_c"
+            app:layout_constraintStart_toStartOf="@id/event_date_c"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/member" />
+
+        <TextView
+            android:id="@+id/no_of_mems"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="42"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toRightOf="@id/no_of_mems_image"
+            app:layout_constraintTop_toBottomOf="@id/event_date_c"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="7dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
